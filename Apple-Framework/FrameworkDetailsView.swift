@@ -17,20 +17,7 @@ struct FrameworkDetailsView: View {
         
         VStack {
             
-            HStack {
-                Spacer()
-                Button(
-                    action: {
-                        isShowingDetailsView = false
-                    }, label: {
-                        Image(systemName: "xmark")
-                            .foregroundColor(Color(.label))
-                            .imageScale(.large)
-                            .frame(width: 44, height: 44)
-                    }
-                )
-            }
-            .padding()
+            XDismissButton(isShowingDetailsView: $isShowingDetailsView)
             
             Spacer()
             FrameworkTitleView(framework: framework)

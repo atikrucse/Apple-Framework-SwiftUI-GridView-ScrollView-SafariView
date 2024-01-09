@@ -18,7 +18,6 @@ final class FrameworkGridViewModel: ObservableObject {
     @Published var isShowingDetailsView = false
     
     let frameworkGridColumns: [GridItem] = [ GridItem(.flexible()),
-                                GridItem(.flexible()),
-                                GridItem(.flexible()) ]
-    
+                                             GridItem(.flexible()),
+                                             GridItem(.flexible()) ]
 }
